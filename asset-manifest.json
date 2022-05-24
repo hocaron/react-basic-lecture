@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.44997d74.css",
-    "main.js": "/static/js/main.1eef9644.js",
-    "static/js/787.cca08c25.chunk.js": "/static/js/787.cca08c25.chunk.js",
-    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/index.html",
-    "main.44997d74.css.map": "/static/css/main.44997d74.css.map",
-    "main.1eef9644.js.map": "/static/js/main.1eef9644.js.map",
-    "787.cca08c25.chunk.js.map": "/static/js/787.cca08c25.chunk.js.map"
+    "main.css": "/react-basic-lecture/static/css/main.44997d74.css",
+    "main.js": "/react-basic-lecture/static/js/main.0f54e694.js",
+    "static/js/787.cca08c25.chunk.js": "/react-basic-lecture/static/js/787.cca08c25.chunk.js",
+    "static/media/logo.svg": "/react-basic-lecture/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/react-basic-lecture/index.html",
+    "main.44997d74.css.map": "/react-basic-lecture/static/css/main.44997d74.css.map",
+    "main.0f54e694.js.map": "/react-basic-lecture/static/js/main.0f54e694.js.map",
+    "787.cca08c25.chunk.js.map": "/react-basic-lecture/static/js/787.cca08c25.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.44997d74.css",
-    "static/js/main.1eef9644.js"
+    "static/js/main.0f54e694.js"
   ]
 }
