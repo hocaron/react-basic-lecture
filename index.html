@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>고양이 가라사대</title>
+    <title>뚱인데여</title>
   </head>
   <style>
     body {
@@ -117,22 +117,23 @@
       };
 
       const App = () => {
-        const CAT1 =
-          "https://images.velog.io/images/sdp1123/post/33869a7f-10d8-4ba5-9125-7fd7824bcbbc/12314.png";
-        const CAT2 =
-          "https://mblogthumb-phinf.pstatic.net/MjAxODAxMjJfMTc5/MDAxNTE2NTUyMjA5ODk3.NR5qa4G30dmB7Wk2wEu5mznT3WZFoD8PS9CJXnzmPpMg.5DgGq4M3DB0m7shvGsG_qOqu2hoXocU_pSHrV2It0yUg.PNG.d_hye97/21313.png?type=w800";
-        const CAT3 = "https://t1.daumcdn.net/cfile/tistory/99F0FA3359A7D7183E";
+        const CATS = [
+          "http://file3.instiz.net/data/cached_img/upload/2021/07/25/22/0b1fc72e82734c68674aed52fa41c84f.jpg",
+          "https://www.wetrend.co.kr/data/file2/wit_board/1901/06/822188214_Hd20r8oF_07d918f75a03cfc368098d2443e60cd3183af97a.jpg",
+          "https://images.velog.io/images/sdp1123/post/33869a7f-10d8-4ba5-9125-7fd7824bcbbc/12314.png",
+        ];
 
         const [counter, setCounter] = React.useState(
           Number(jsonLocalStorage.getItem("counter"))
         );
-        const [mainCat, setMainCat] = React.useState(CAT1);
+        const [mainCat, setMainCat] = React.useState(CATS[0]);
         const [favorites, setFavorites] = React.useState(
           jsonLocalStorage.getItem("favorites") || []
         );
 
         function updateMainCat() {
-          setMainCat(CAT2);
+          const mainCatIdx = Math.floor(Math.random() * CATS.length);
+          setMainCat(CATS[mainCatIdx]);
           const nextCounter = counter + 1;
           setCounter(nextCounter);
           jsonLocalStorage.setItem("counter", nextCounter);
@@ -146,7 +147,7 @@
 
         return (
           <div>
-            <Title>{counter}번째 고양이 가라사대</Title>
+            <Title>{counter}번째 뚱인데여</Title>
             <Form updateMainCat={updateMainCat} />
             <MainCard img={mainCat} onHeartClick={handleHeartClick} />
             <Favorites favorites={favorites} />
